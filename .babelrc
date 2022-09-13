@@ -2,8 +2,7 @@
   "plugins": [
     ["module-resolver", {
       "alias": {
-        "test": "./test",
-        "underscore": "lodash"
+        "~": "./src"
       }
     }]
   ]
