@@ -1,5 +1,5 @@
 .wrapper {
-  height: 60px;
+  height: var(--defaut-layout-header-height);
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12);
   display: flex;
   justify-content: center;
@@ -7,6 +7,5 @@
 
 .inner {
   height: 100%;
-  width: 1150px;
-  background: #ccc;
+  width: var(--defaut-layout-width);
 }

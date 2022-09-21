@@ -19,9 +19,22 @@ html {
   box-sizing: border-box;
 }
 
+input,
+button {
+  outline: none;
+}
+
+button {
+  border: none;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
   font-size: 1.6rem;
   line-height: 1.5;
   text-rendering: optimizeSpeed;
+}
+
+.flex {
+  display: flex;
 }
