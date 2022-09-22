@@ -20,12 +20,10 @@ html {
 }
 
 input,
-button {
-  outline: none;
-}
-
-button {
+button,
+[tabindex] {
   border: none;
+  outline: none;
 }
 
 body {

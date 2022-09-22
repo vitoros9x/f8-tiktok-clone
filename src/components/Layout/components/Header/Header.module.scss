@@ -8,4 +8,6 @@
 .inner {
   height: 100%;
   width: var(--defaut-layout-width);
+  display: flex;
+  justify-content: space-between;
 }
