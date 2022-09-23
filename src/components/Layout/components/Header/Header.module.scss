@@ -20,6 +20,11 @@
   height: 46px;
   overflow: hidden;
   position: relative;
+  border: 1.5px solid transparent;
+
+  &:focus-within {
+    border-color: rgba(22, 24, 35, .2);
+  }
 
   input {
     display: block;
@@ -30,8 +35,12 @@
     caret-color: var(--primary);
   }
 
-  input:placeholder-shown .clear {
+  input:not(:placeholder-shown)~.clear {
     display: block;
+  }
+
+  input:not(:placeholder-shown)~.search-btn .icon {
+    color: rgba(22, 24, 35, 0.75);
   }
 }
 
@@ -41,10 +50,11 @@
   top: 0;
   height: 100%;
   padding: 11px 16px 11px 12px;
+  cursor: pointer;
 
   .icon {
-    width: 24px;
-    height: 24px;
+    width: 18px;
+    height: 18px;
     color: rgba(22, 24, 35, 0.34);
   }
 
