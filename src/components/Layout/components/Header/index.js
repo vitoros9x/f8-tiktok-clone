@@ -4,6 +4,7 @@ import {
   faCircleXmark,
   faSpinner,
   faMagnifyingGlass,
+  faSignIn,
 } from '@fortawesome/free-solid-svg-icons';
 import Tippy from '@tippyjs/react/headless';
 
@@ -12,6 +13,7 @@ import { useState } from 'react';
 import { useEffect } from 'react';
 import { Wrapper as PopperWrapper } from '~/components/Popper';
 import AccountItem from '~/components/AccountItem';
+import Button from '~/components/Button';
 
 const cx = classNames.bind(styles);
 
@@ -26,7 +28,7 @@ function Header() {
 
   return (
     <header className={cx('wrapper')}>
-      <div className={`${cx('inner')} flex`}>
+      <div className={cx('inner', 'flex')}>
         <div className={cx('logo')}>
           <svg height="42" width="118" alt="TikTok">
             <g clipPath="url(#clip0)">
@@ -137,9 +139,12 @@ function Header() {
           </div>
         </Tippy>
 
-        <div></div>
+        <div className={cx('action')}>
+          <Button type="text">Upload</Button>
+          <Button type="primary">Log in</Button>
+        </div>
       </div>
-    </header>
+    </header >
   );
 }
 

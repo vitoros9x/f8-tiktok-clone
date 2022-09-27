@@ -27,6 +27,11 @@ button,
   outline: none;
 }
 
+a[href] {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
   font-size: 1.6rem;

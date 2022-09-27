@@ -39,11 +39,11 @@
     caret-color: var(--primary);
   }
 
-  input:not(:placeholder-shown) ~ .clear {
+  input:not(:placeholder-shown)~.clear {
     display: block;
   }
 
-  input:not(:placeholder-shown) ~ .search-btn .icon {
+  input:not(:placeholder-shown)~.search-btn .icon {
     color: rgba(22, 24, 35, 0.75);
   }
 }
