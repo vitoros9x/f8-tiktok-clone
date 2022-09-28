@@ -144,7 +144,7 @@ function Header() {
           <Button type="primary">Log in</Button>
         </div>
       </div>
-    </header >
+    </header>
   );
 }
 
