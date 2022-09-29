@@ -99,3 +99,21 @@
   font-weight: 600;
   color: rgba(22, 24, 35, 0.5);
 }
+
+.more-btn {
+  padding: 0 4px;
+  background: transparent;
+  margin-left: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+
+  svg {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.action {
+  align-items: center;
+}
